@@ -1,166 +1,174 @@
 .recruite__page {
-  background-color: $dark-color;
-  height: 100vh;
+    background-color: $dark-color;
+    height: 100vh;
 
-  .buttons {
-    a {
-      .freelance {
-        border: 1px solid $main-color;
-        padding: 15px;
-        color: $light-color;
-        position: absolute;
-        left: 0;
-      }
-
-      .recruiter {
-        border: 1px solid $main-color;
-        padding: 15px;
-        color: $light-color;
-        position: absolute;
-        right: 0;
-      }
-    }
-  }
-
-  .about {
-    border-bottom: 1px solid $main-color;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    .card--body {
-      span.about-me {
-        font-size: 26px;
-        text-transform: uppercase;
-        color: $main-color;
-        &::after {
-          content: "";
-          border: 1px solid $light-color;
-          width: 85px;
-          display: flex;
-          opacity: 1;
-          position: absolute;
-          top: 25%;
-        }
-      }
-      .lead {
-        background-color: $dark-color;
-        margin-top: 30px;
-        color: $accent-color;
-        @include box-shadow;
-        border-radius: 5px;
-
-        strong {
-          color: $light-color;
-        }
-      }
-    }
-  }
-
-  // MY SKILLS AREA
-  .skills {
-    border-bottom: 1px solid $main-color;
-    margin-top: 35px;
-    padding-bottom: 75px;
-
-    .card-body {
-      span.my-skills {
-        font-size: 26px;
-        text-transform: uppercase;
-        color: $main-color;
-        &::after {
-          content: "";
-          border: 1px solid $light-color;
-          width: 35px;
-          display: flex;
-          opacity: 1;
-          position: absolute;
-          top: 79%;
-        }
-      }
-
-      .progess-group {
-        border-radius: 4px;
-        margin-top: 50px;
-        padding-top: 15px;
-        padding-bottom: 30px;
-        @include box-shadow;
-
-        h3 {
-          color: $main-color;
-          opacity: 0.5;
-          letter-spacing: 1.5px;
-          font-family: $josephin-font;
-        }
-        h6 {
-          color: $light-color;
-          padding-top: 25px;
-        }
-      }
-    }
-  }
-
-  // WORK EXPERIENCE AREA
-  .work-experience {
-    margin-top: 35px;
-    padding-bottom: 35px;
-
-    .card-body {
-      span.work-experience {
-        font-size: 26px;
-        text-transform: uppercase;
-        color: $main-color;
-        &::after {
-          content: "";
-          border: 1px solid $light-color;
-          width: 78px;
-          display: flex;
-          opacity: 1;
-          position: relative;
-          top: 0%;
-        }
-      }
-
-      .my__experience {
-        margin-top: 80px;
-        padding-bottom: 20px;
-        border-radius: 5px;
-        background-color: $dark-color;
-        color: $accent-color;
-        @include box-shadow;
-        width: 100%;
-
-        &--pic {
-          h3 {
-            color: $main-color;
-            padding: 15px 10px 0px 10px;
-          }
-          h6 {
-            padding-left: 10px;
-            margin-top: -10px;
-            color: red;
-          }
-        }
-
-        &--info {
-          h4 {
-            color: $main-color;
-            text-transform: capitalize;
-            padding-top: 20px;
-          }
-
-          a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $light-color;
-            border: 1px solid $accent-color;
-            padding: 5px;
-            border-radius: 5px;
-            cursor: pointer;
-            i {
-              padding-left: 5px;
+    .buttons {
+        a {
+            .freelance {
+                border: 1px solid $main-color;
+                padding: 15px;
+                color: $light-color;
+                position: absolute;
+                left: 0;
             }
-          }
+
+            .recruiter {
+                border: 1px solid $main-color;
+                padding: 15px;
+                color: $light-color;
+                position: absolute;
+                right: 0;
+            }
         }
-      }
     }
-  }
+
+    .about {
+        border-bottom: 1px solid $main-color;
+        padding-top: 35px;
+        padding-bottom: 35px;
+
+        .card--body {
+            span.about-me {
+                font-size: 26px;
+                text-transform: uppercase;
+                color: $main-color;
+
+                &::after {
+                    content: "";
+                    border: 1px solid $light-color;
+                    width: 85px;
+                    display: flex;
+                    opacity: 1;
+                    position: relative;
+                    top: 0%;
+                }
+            }
+
+            .lead {
+                background-color: $dark-color;
+                margin-top: 30px;
+                color: $accent-color;
+                @include box-shadow;
+                border-radius: 5px;
+
+                strong {
+                    color: $light-color;
+                }
+            }
+        }
+    }
+
+    // MY SKILLS AREA
+    .skills {
+        border-bottom: 1px solid $main-color;
+        margin-top: 35px;
+        padding-bottom: 75px;
+
+        .card-body {
+            span.my-skills {
+                font-size: 26px;
+                text-transform: uppercase;
+                color: $main-color;
+
+                &::after {
+                    content: "";
+                    border: 1px solid $light-color;
+                    width: 35px;
+                    display: flex;
+                    opacity: 1;
+                    position: absolute;
+                    top: 79%;
+                }
+            }
+
+            .progess-group {
+                border-radius: 4px;
+                margin-top: 50px;
+                padding-top: 15px;
+                padding-bottom: 30px;
+                @include box-shadow;
+
+                h3 {
+                    color: $main-color;
+                    opacity: 0.5;
+                    letter-spacing: 1.5px;
+                    font-family: $josephin-font;
+                }
+
+                h6 {
+                    color: $light-color;
+                    padding-top: 25px;
+                }
+            }
+        }
+    }
+
+    // WORK EXPERIENCE AREA
+    .work-experience {
+        margin-top: 35px;
+        padding-bottom: 35px;
+
+        .card-body {
+            span.work-experience {
+                font-size: 26px;
+                text-transform: uppercase;
+                color: $main-color;
+
+                &::after {
+                    content: "";
+                    border: 1px solid $light-color;
+                    width: 78px;
+                    display: flex;
+                    opacity: 1;
+                    position: relative;
+                    top: 0%;
+                }
+            }
+
+            .my__experience {
+                margin-top: 80px;
+                padding-bottom: 20px;
+                border-radius: 5px;
+                background-color: $dark-color;
+                color: $accent-color;
+                @include box-shadow;
+                width: 100%;
+
+                &--pic {
+                    h3 {
+                        color: $main-color;
+                        padding: 15px 10px 0px 10px;
+                    }
+
+                    h6 {
+                        padding-left: 10px;
+                        margin-top: -10px;
+                        color: red;
+                    }
+                }
+
+                &--info {
+                    h4 {
+                        color: $main-color;
+                        text-transform: capitalize;
+                        padding-top: 20px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: $light-color;
+                        border: 1px solid $accent-color;
+                        padding: 5px;
+                        border-radius: 5px;
+                        cursor: pointer;
+
+                        i {
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
