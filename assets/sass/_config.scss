@@ -1,0 +1,23 @@
+// Google Fonts
+$crimson-font: "Crimson Text", serif;
+$josephin-font: "Josefin Sans", sans-serif;
+
+// Colors
+$dark-color: #0f1337;
+
+$dark-color-light: rgba(0, 0, 0, 0.5);
+
+$light-color: #cdd3e2;
+
+$accent-color: #7a8bb6;
+
+$main-color: #5061a0;
+
+@mixin text-shadow {
+  text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3);
+}
+
+@mixin box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}

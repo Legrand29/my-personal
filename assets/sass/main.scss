@@ -1,0 +1,85 @@
+@import "config";
+@import "utilities";
+@import "recruite";
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $crimson-font;
+  font-size: 16px;
+  background-color: $dark-color;
+}
+
+.buttons {
+  padding-top: 15px;
+  text-align: center;
+
+  a {
+    .freelance {
+      border: 1px solid $main-color;
+      padding: 15px;
+      color: $light-color;
+      position: absolute;
+      left: 0;
+    }
+
+    .recruiter {
+      border: 1px solid $main-color;
+      padding: 15px;
+      color: $light-color;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .recruiter {
+    color: $light-color;
+    @include text-shadow;
+    text-align: center;
+  }
+
+  .feelance {
+    color: $light-color;
+    @include text-shadow;
+  }
+}
+
+.main-page-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  color: $light-color;
+
+  h2 {
+    color: $light-color;
+    font-family: $crimson-font;
+  }
+
+  h5 {
+    color: $light-color;
+  }
+
+  span {
+    font-size: 18px;
+  }
+}
+
+.social {
+  text-align: center;
+
+  a {
+    border: 1px solid $main-color;
+    padding: 5px 5px;
+    margin: 0 3px;
+    color: $light-color;
+  }
+}

@@ -1,0 +1,178 @@
+hr {
+  width: 100%;
+  height: 10%;
+  background-color: #cdd3e2;
+  margin-top: 60px; }
+
+.recruite__page {
+  background-color: #0f1337;
+  height: 100vh; }
+  .recruite__page .buttons a .freelance {
+    border: 1px solid #5061a0;
+    padding: 15px;
+    color: #cdd3e2;
+    position: absolute;
+    left: 0; }
+  .recruite__page .buttons a .recruiter {
+    border: 1px solid #5061a0;
+    padding: 15px;
+    color: #cdd3e2;
+    position: absolute;
+    right: 0; }
+  .recruite__page .about {
+    border-bottom: 1px solid #5061a0;
+    padding-top: 35px;
+    padding-bottom: 35px; }
+    .recruite__page .about .card--body span.about-me {
+      font-size: 26px;
+      text-transform: uppercase;
+      color: #5061a0; }
+      .recruite__page .about .card--body span.about-me::after {
+        content: "";
+        border: 1px solid #cdd3e2;
+        width: 85px;
+        display: flex;
+        opacity: 1;
+        position: absolute;
+        top: 25%; }
+    .recruite__page .about .card--body .lead {
+      background-color: #0f1337;
+      margin-top: 30px;
+      color: #7a8bb6;
+      box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+      border-radius: 5px; }
+      .recruite__page .about .card--body .lead strong {
+        color: #cdd3e2; }
+  .recruite__page .skills {
+    border-bottom: 1px solid #5061a0;
+    margin-top: 35px;
+    padding-bottom: 75px; }
+    .recruite__page .skills .card-body span.my-skills {
+      font-size: 26px;
+      text-transform: uppercase;
+      color: #5061a0; }
+      .recruite__page .skills .card-body span.my-skills::after {
+        content: "";
+        border: 1px solid #cdd3e2;
+        width: 35px;
+        display: flex;
+        opacity: 1;
+        position: absolute;
+        top: 79%; }
+    .recruite__page .skills .card-body .progess-group {
+      border-radius: 4px;
+      margin-top: 50px;
+      padding-top: 15px;
+      padding-bottom: 30px;
+      box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19); }
+      .recruite__page .skills .card-body .progess-group h3 {
+        color: #5061a0;
+        opacity: 0.5;
+        letter-spacing: 1.5px;
+        font-family: "Josefin Sans", sans-serif; }
+      .recruite__page .skills .card-body .progess-group h6 {
+        color: #cdd3e2;
+        padding-top: 25px; }
+  .recruite__page .work-experience {
+    margin-top: 35px;
+    padding-bottom: 35px; }
+    .recruite__page .work-experience .card-body span.work-experience {
+      font-size: 26px;
+      text-transform: uppercase;
+      color: #5061a0; }
+      .recruite__page .work-experience .card-body span.work-experience::after {
+        content: "";
+        border: 1px solid #cdd3e2;
+        width: 78px;
+        display: flex;
+        opacity: 1;
+        position: relative;
+        top: 0%; }
+    .recruite__page .work-experience .card-body .my__experience {
+      margin-top: 80px;
+      padding-bottom: 20px;
+      border-radius: 5px;
+      background-color: #0f1337;
+      color: #7a8bb6;
+      box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+      width: 100%; }
+      .recruite__page .work-experience .card-body .my__experience--pic h3 {
+        color: #5061a0;
+        padding: 15px 10px 0px 10px; }
+      .recruite__page .work-experience .card-body .my__experience--pic h6 {
+        padding-left: 10px;
+        margin-top: -10px;
+        color: red; }
+      .recruite__page .work-experience .card-body .my__experience--info h4 {
+        color: #5061a0;
+        text-transform: capitalize;
+        padding-top: 20px; }
+      .recruite__page .work-experience .card-body .my__experience--info a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #cdd3e2;
+        border: 1px solid #7a8bb6;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer; }
+        .recruite__page .work-experience .card-body .my__experience--info a i {
+          padding-left: 5px; }
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  background-color: #0f1337; }
+
+.buttons {
+  padding-top: 15px;
+  text-align: center; }
+  .buttons a .freelance {
+    border: 1px solid #5061a0;
+    padding: 15px;
+    color: #cdd3e2;
+    position: absolute;
+    left: 0; }
+  .buttons a .recruiter {
+    border: 1px solid #5061a0;
+    padding: 15px;
+    color: #cdd3e2;
+    position: absolute;
+    right: 0; }
+  .buttons .recruiter {
+    color: #cdd3e2;
+    text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3);
+    text-align: center; }
+  .buttons .feelance {
+    color: #cdd3e2;
+    text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3); }
+
+.main-page-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  color: #cdd3e2; }
+  .main-page-info h2 {
+    color: #cdd3e2;
+    font-family: "Crimson Text", serif; }
+  .main-page-info h5 {
+    color: #cdd3e2; }
+  .main-page-info span {
+    font-size: 18px; }
+
+.social {
+  text-align: center; }
+  .social a {
+    border: 1px solid #5061a0;
+    padding: 5px 5px;
+    margin: 0 3px;
+    color: #cdd3e2; }
