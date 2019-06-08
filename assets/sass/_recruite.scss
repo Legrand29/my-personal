@@ -171,4 +171,62 @@
             }
         }
     }
+
+    // CONTACT AREA
+    .contact-page {
+        margin-top: 35px;
+        padding-bottom: 35px;
+
+        .card-body {
+            span.contact {
+                font-size: 26px;
+                text-transform: uppercase;
+                color: $main-color;
+
+                &::after {
+                    content: "";
+                    border: 1px solid $light-color;
+                    width: 115px;
+                    display: flex;
+                    opacity: 1;
+                    position: relative;
+                    top: 0%;
+                }
+            }
+
+            .contact__info {
+                margin-top: 80px;
+                padding: 20px 0 40px 0;
+                border-radius: 5px;
+                background-color: $dark-color;
+                color: $accent-color;
+                @include box-shadow;
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                i {
+                    color: $light-color;
+                    border-radius: 50%;
+                    border: 1px solid $light-color;
+                    padding: 15px;
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    font-size: 24px;
+                    text-transform: capitalize;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $light-color;
+                }
+            }
+        }
+    }
 }

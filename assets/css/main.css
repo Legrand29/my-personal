@@ -117,6 +117,46 @@ hr {
         cursor: pointer; }
         .recruite__page .work-experience .card-body .my__experience--info a i {
           padding-left: 5px; }
+  .recruite__page .contact-page {
+    margin-top: 35px;
+    padding-bottom: 35px; }
+    .recruite__page .contact-page .card-body span.contact {
+      font-size: 26px;
+      text-transform: uppercase;
+      color: #5061a0; }
+      .recruite__page .contact-page .card-body span.contact::after {
+        content: "";
+        border: 1px solid #cdd3e2;
+        width: 115px;
+        display: flex;
+        opacity: 1;
+        position: relative;
+        top: 0%; }
+    .recruite__page .contact-page .card-body .contact__info {
+      margin-top: 80px;
+      padding: 20px 0 40px 0;
+      border-radius: 5px;
+      background-color: #0f1337;
+      color: #7a8bb6;
+      box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .recruite__page .contact-page .card-body .contact__info i {
+        color: #cdd3e2;
+        border-radius: 50%;
+        border: 1px solid #cdd3e2;
+        padding: 15px;
+        margin-bottom: 20px; }
+      .recruite__page .contact-page .card-body .contact__info span {
+        font-size: 24px;
+        text-transform: capitalize; }
+      .recruite__page .contact-page .card-body .contact__info a {
+        text-decoration: none;
+        color: #cdd3e2; }
 
 *,
 *:before,
