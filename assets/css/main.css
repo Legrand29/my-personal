@@ -158,6 +158,114 @@ hr {
         text-decoration: none;
         color: #cdd3e2; }
 
+.freelance__page {
+  background-color: #E1E4E9;
+  color: #2E2B59;
+  height: 100vh; }
+  .freelance__page .buttons a .freelance {
+    color: #2E2B59;
+    border-left: 0; }
+  .freelance__page .buttons a .recruiter {
+    color: #2E2B59;
+    border-right: 0; }
+  .freelance__page .main-page-info {
+    border-bottom: 1px solid #2E2B59; }
+    .freelance__page .main-page-info img {
+      width: 100px;
+      height: 110px;
+      border-radius: 50%;
+      transform: rotate(270deg);
+      margin-top: 80px;
+      margin-bottom: 50px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    .freelance__page .main-page-info h5 {
+      background-color: #2E2B59;
+      color: #cdd3e2;
+      padding: 10px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    .freelance__page .main-page-info h2 {
+      color: #2E2B59;
+      font-size: 44px; }
+    .freelance__page .main-page-info h6 {
+      color: #2E2B59;
+      font-size: 24px;
+      text-transform: capitalize;
+      padding-top: 10px; }
+    .freelance__page .main-page-info span.email {
+      color: #2E2B59;
+      font-size: 24px; }
+    .freelance__page .main-page-info span.phone {
+      color: #2E2B59;
+      font-size: 24px;
+      margin-top: 10px; }
+  .freelance__page .service {
+    background-color: #E1E4E9;
+    padding-top: 40px;
+    border-bottom: 1px solid #2E2B59;
+    height: auto; }
+    .freelance__page .service h4 {
+      color: #2E2B59;
+      text-align: center;
+      padding-bottom: 10px; }
+    .freelance__page .service .design {
+      border: 1px solid #2E2B59;
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      margin-bottom: 40px;
+      background-color: #2E2B59;
+      color: #E1E4E9; }
+      .freelance__page .service .design h6 {
+        color: #E1E4E9; }
+      .freelance__page .service .design i {
+        padding-top: 30px;
+        padding-bottom: 10px; }
+  .freelance__page .portfolio {
+    background-color: #E1E4E9;
+    padding-top: 40px;
+    border-bottom: 1px solid #2E2B59; }
+  .freelance__page .pricing {
+    background-color: #E1E4E9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #2E2B59; }
+    .freelance__page .pricing .basic {
+      padding: 30px 15px;
+      background-color: #2E2B59;
+      color: #E1E4E9;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 15px; }
+      .freelance__page .pricing .basic h4 {
+        color: #E1E4E9;
+        padding-bottom: 20px; }
+        .freelance__page .pricing .basic h4::after {
+          content: "";
+          display: block;
+          width: 63px;
+          border: 1px solid #E1E4E9;
+          position: absolute;
+          right: 42%; }
+      .freelance__page .pricing .basic h6 {
+        font-size: 34px;
+        color: #E1E4E9; }
+        .freelance__page .pricing .basic h6 sub {
+          font-size: 11px; }
+      .freelance__page .pricing .basic span.text {
+        font-size: 14px;
+        width: 100%;
+        position: relative; }
+      .freelance__page .pricing .basic ul {
+        padding-top: 50px; }
+      .freelance__page .pricing .basic button {
+        width: 100%;
+        background-color: #E1E4E9;
+        color: #2E2B59;
+        text-transform: uppercase;
+        font-size: 18px; }
+
 *,
 *:before,
 *:after {
