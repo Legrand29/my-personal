@@ -12,12 +12,14 @@ hr {
     padding: 15px;
     color: #cdd3e2;
     position: absolute;
+    top: 20px;
     left: 0; }
   .recruite__page .buttons a .recruiter {
     border: 1px solid #5061a0;
     padding: 15px;
     color: #cdd3e2;
     position: absolute;
+    top: 20px;
     right: 0; }
   .recruite__page .about {
     border-bottom: 1px solid #5061a0;
@@ -164,18 +166,22 @@ hr {
   height: 100vh; }
   .freelance__page .buttons a .freelance {
     color: #2E2B59;
-    border-left: 0; }
+    border-left: 0;
+    top: 40px;
+    left: 0; }
   .freelance__page .buttons a .recruiter {
     color: #2E2B59;
-    border-right: 0; }
+    border-right: 0;
+    top: 40px;
+    right: 0; }
   .freelance__page .main-page-info {
-    border-bottom: 1px solid #2E2B59; }
+    border-bottom: 1px solid #2E2B59;
+    height: 90%; }
     .freelance__page .main-page-info img {
       width: 100px;
       height: 110px;
       border-radius: 50%;
       transform: rotate(270deg);
-      margin-top: 80px;
       margin-bottom: 50px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
     .freelance__page .main-page-info h5 {
@@ -205,6 +211,7 @@ hr {
     background-color: #E1E4E9;
     padding-top: 40px;
     border-bottom: 1px solid #2E2B59;
+    height: 100%;
     height: auto; }
     .freelance__page .service h4 {
       color: #2E2B59;
@@ -265,6 +272,14 @@ hr {
         color: #2E2B59;
         text-transform: uppercase;
         font-size: 18px; }
+  .freelance__page .contact {
+    background-color: #E1E4E9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #2E2B59; }
+    .freelance__page .contact h4 {
+      text-align: center;
+      text-transform: capitalize; }
 
 *,
 *:before,
@@ -286,13 +301,15 @@ body {
     padding: 15px;
     color: #cdd3e2;
     position: absolute;
-    left: 0; }
+    top: 50%;
+    left: 60px; }
   .buttons a .recruiter {
     border: 1px solid #5061a0;
     padding: 15px;
     color: #cdd3e2;
     position: absolute;
-    right: 0; }
+    top: 50%;
+    right: 60px; }
   .buttons .recruiter {
     color: #cdd3e2;
     text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3);
@@ -307,7 +324,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 80vh;
+  height: 40vh;
   color: #cdd3e2; }
   .main-page-info h2 {
     color: #cdd3e2;
@@ -318,7 +335,8 @@ body {
     font-size: 18px; }
 
 .social {
-  text-align: center; }
+  text-align: center;
+  padding-top: 230px; }
   .social a {
     border: 1px solid #5061a0;
     padding: 5px 5px;

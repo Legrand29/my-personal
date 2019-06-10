@@ -27,7 +27,8 @@ body {
       padding: 15px;
       color: $light-color;
       position: absolute;
-      left: 0;
+      top: 50%;
+      left: 60px;
     }
 
     .recruiter {
@@ -35,7 +36,8 @@ body {
       padding: 15px;
       color: $light-color;
       position: absolute;
-      right: 0;
+      top: 50%;
+      right: 60px;
     }
   }
 
@@ -57,7 +59,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 80vh;
+  height: 40vh;
   color: $light-color;
 
   h2 {
@@ -76,6 +78,7 @@ body {
 
 .social {
   text-align: center;
+  padding-top: 230px;
 
   a {
     border: 1px solid $main-color;

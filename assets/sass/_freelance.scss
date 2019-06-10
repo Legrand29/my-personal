@@ -1,166 +1,185 @@
 .freelance__page {
+  background-color: $free-light;
+  color: $free-dark;
+  height: 100vh;
+
+  .buttons {
+    a {
+      .freelance {
+        color: $free-dark;
+        border-left: 0;
+        top: 40px;
+        left: 0;
+      }
+
+      .recruiter {
+        color: $free-dark;
+        border-right: 0;
+        top: 40px;
+        right: 0;
+      }
+    }
+  }
+
+  // Main Page Info
+  .main-page-info {
+    // padding-top: 120px;
+    border-bottom: 1px solid $free-dark;
+    height: 90%;
+
+    img {
+      width: 100px;
+      height: 110px;
+      border-radius: 50%;
+      transform: rotate(270deg);
+      // margin-top: 80px;
+      margin-bottom: 50px;
+      @include freelance-shadow;
+    }
+
+    h5 {
+      background-color: $free-dark;
+      color: $light-color;
+      padding: 10px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      @include freelance-shadow;
+    }
+
+    h2 {
+      color: $free-dark;
+      font-size: 44px;
+    }
+
+    h6 {
+      color: $free-dark;
+      font-size: 24px;
+      text-transform: capitalize;
+      padding-top: 10px;
+    }
+
+    span.email {
+      color: $free-dark;
+      font-size: 24px;
+    }
+
+    span.phone {
+      color: $free-dark;
+      font-size: 24px;
+      margin-top: 10px;
+    }
+  }
+
+  // Service Area
+  .service {
     background-color: $free-light;
-    color: $free-dark;
-    height: 100vh;
+    padding-top: 40px;
+    border-bottom: 1px solid $free-dark;
+    height: 100%;
 
-    .buttons {
-        a {
-            .freelance {
-                color: $free-dark;
-                border-left: 0;
-            }
+    height: auto;
 
-            .recruiter {
-                color: $free-dark;
-                border-right: 0;
-            }
-        }
+    h4 {
+      color: $free-dark;
+      text-align: center;
+      padding-bottom: 10px;
     }
 
-    // Main Page Info
-    .main-page-info {
-        border-bottom: 1px solid $free-dark;
+    .design {
+      border: 1px solid $free-dark;
+      border-radius: 4px;
+      @include freelance-shadow;
+      margin-bottom: 40px;
+      background-color: $free-dark;
+      color: $free-light;
 
-        img {
-            width: 100px;
-            height: 110px;
-            border-radius: 50%;
-            transform: rotate(270deg);
-            margin-top: 80px;
-            margin-bottom: 50px;
-            @include freelance-shadow;
-        }
+      h6 {
+        color: $free-light;
+      }
 
-        h5 {
-            background-color: $free-dark;
-            color: $light-color;
-            padding: 10px;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-            @include freelance-shadow;
-        }
-
-        h2 {
-            color: $free-dark;
-            font-size: 44px;
-        }
-
-        h6 {
-            color: $free-dark;
-            font-size: 24px;
-            text-transform: capitalize;
-            padding-top: 10px;
-        }
-
-        span.email {
-            color: $free-dark;
-            font-size: 24px;
-        }
-
-        span.phone {
-            color: $free-dark;
-            font-size: 24px;
-            margin-top: 10px;
-        }
+      i {
+        padding-top: 30px;
+        padding-bottom: 10px;
+      }
     }
+  }
 
-    // Service Area
-    .service {
+  // PORTFOLIO AREA
+  .portfolio {
+    background-color: $free-light;
+    padding-top: 40px;
+    border-bottom: 1px solid $free-dark;
+  }
+
+  // PRICING
+  .pricing {
+    background-color: $free-light;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $free-dark;
+
+    .basic {
+      padding: 30px 15px;
+      background-color: $free-dark;
+      color: $free-light;
+      text-align: center;
+      @include freelance-shadow;
+      border-radius: 15px;
+
+      h4 {
+        color: $free-light;
+        padding-bottom: 20px;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 63px;
+          border: 1px solid $free-light;
+          position: absolute;
+          right: 42%;
+        }
+      }
+
+      h6 {
+        font-size: 34px;
+        color: $free-light;
+
+        sub {
+          font-size: 11px;
+        }
+      }
+
+      span.text {
+        font-size: 14px;
+        width: 100%;
+        position: relative;
+      }
+
+      ul {
+        padding-top: 50px;
+      }
+
+      button {
+        width: 100%;
         background-color: $free-light;
-        padding-top: 40px;
-        border-bottom: 1px solid $free-dark;
-
-        height: auto;
-
-        h4 {
-            color: $free-dark;
-            text-align: center;
-            padding-bottom: 10px;
-        }
-
-        .design {
-            border: 1px solid $free-dark;
-            border-radius: 4px;
-            @include freelance-shadow;
-            margin-bottom: 40px;
-            background-color: $free-dark;
-            color: $free-light;
-
-            h6 {
-                color: $free-light;
-            }
-
-            i {
-                padding-top: 30px;
-                padding-bottom: 10px;
-            }
-
-        }
+        color: $free-dark;
+        text-transform: uppercase;
+        font-size: 18px;
+      }
     }
+  }
 
-    // PORTFOLIO AREA
-    .portfolio {
-        background-color: $free-light;
-        padding-top: 40px;
-        border-bottom: 1px solid $free-dark;
+  // CONTACT AREA
+  .contact {
+    background-color: $free-light;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $free-dark;
+
+    h4 {
+      text-align: center;
+      text-transform: capitalize;
     }
-
-    // PRICING
-    .pricing {
-        background-color: $free-light;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        border-bottom: 1px solid $free-dark;
-
-        .basic {
-            padding: 30px 15px;
-            background-color: $free-dark;
-            color: $free-light;
-            text-align: center;
-            @include freelance-shadow;
-            border-radius: 15px;
-
-            h4 {
-                color: $free-light;
-                padding-bottom: 20px;
-
-                &::after {
-                    content: "";
-                    display: block;
-                    width: 63px;
-                    border: 1px solid $free-light;
-                    position: absolute;
-                    right: 42%;
-                }
-            }
-
-            h6 {
-                font-size: 34px;
-                color: $free-light;
-
-                sub {
-                    font-size: 11px;
-                }
-            }
-
-            span.text {
-                font-size: 14px;
-                width: 100%;
-                position: relative;
-            }
-
-            ul {
-                padding-top: 50px;
-            }
-
-            button {
-                width: 100%;
-                background-color: $free-light;
-                color: $free-dark;
-                text-transform: uppercase;
-                font-size: 18px;
-            }
-        }
-    }
+  }
 }
