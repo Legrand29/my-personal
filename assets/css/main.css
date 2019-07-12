@@ -4,6 +4,13 @@ hr {
   background-color: #cdd3e2;
   margin-top: 60px; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    text-decoration: none;
+    color: inherit; }
+
 .recruite__page {
   background-color: #0f1337;
   height: 100vh; }
@@ -217,28 +224,31 @@ hr {
       margin-bottom: 50px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
     .freelance__page .main-page-info h5 {
-      background-color: #2e2b59;
-      color: #cdd3e2;
+      color: #2e2b59;
+      text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3); }
+    .freelance__page .main-page-info h2 {
+      color: #2e2b59;
+      font-size: 44px;
       padding: 10px;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-    .freelance__page .main-page-info h2 {
-      color: #2e2b59;
-      font-size: 44px; }
+      text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3); }
     .freelance__page .main-page-info h6 {
       color: #2e2b59;
       font-size: 24px;
       text-transform: capitalize;
-      padding-top: 10px; }
+      padding-top: 10px;
+      text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3); }
     .freelance__page .main-page-info span.email {
-      color: #2e2b59;
-      font-size: 24px; }
-    .freelance__page .main-page-info span.phone {
-      color: #2e2b59;
+      color: #e1e4e9;
       font-size: 24px;
-      margin-top: 10px; }
+      text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3); }
+    .freelance__page .main-page-info span.phone {
+      color: #e1e4e9;
+      font-size: 24px;
+      margin-top: 10px;
+      text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3); }
   .freelance__page .service {
     background-color: #e1e4e9;
     padding-top: 40px;
@@ -257,17 +267,20 @@ hr {
       background-color: #2e2b59;
       color: #e1e4e9; }
       .freelance__page .service .design h6 {
-        color: #e1e4e9; }
+        color: #5061a0; }
       .freelance__page .service .design i {
         padding-top: 30px;
         padding-bottom: 10px; }
   .freelance__page .portfolio {
     background-color: #e1e4e9;
     padding-top: 40px;
-    border-bottom: 1px solid #2e2b59; }
+    border-bottom: 1px solid #2e2b59;
+    text-align: center; }
     .freelance__page .portfolio ul {
       background-color: #e1e4e9;
-      margin-left: 50px; }
+      margin-left: 50px;
+      display: flex;
+      justify-content: center; }
       .freelance__page .portfolio ul li {
         padding: 5px;
         transition: all .3s ease-in; }
@@ -287,7 +300,8 @@ hr {
             border-radius: 5px; }
     .freelance__page .portfolio .tab-space {
       padding-top: 30px; }
-      .freelance__page .portfolio .tab-space .col-md-6, .freelance__page .portfolio .tab-space .col-md-4 {
+      .freelance__page .portfolio .tab-space .col-md-6,
+      .freelance__page .portfolio .tab-space .col-md-4 {
         padding: 20px; }
       .freelance__page .portfolio .tab-space .card {
         background-image: url(../images/restaurant/pulses.png);
@@ -319,10 +333,10 @@ hr {
     background-color: #e1e4e9;
     padding-top: 40px;
     padding-bottom: 40px;
-    border-bottom: 1px solid #2e2b59; }
+    border-bottom: 1px solid #0f1337; }
     .freelance__page .contact h4 {
       text-align: center;
-      text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3); }
+      text-shadow: 0px 2px 2px #e1e4e9; }
       .freelance__page .contact h4 a {
         text-decoration: none;
         color: #0f1337;

@@ -74,18 +74,18 @@
     }
 
     h5 {
-      background-color: $free-dark;
-      color: $light-color;
-      padding: 10px;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      @include freelance-shadow;
+      color: $free-dark;
+      @include text-shadow;
     }
 
     h2 {
       color: $free-dark;
       font-size: 44px;
+      padding: 10px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      @include text-shadow;
     }
 
     h6 {
@@ -93,17 +93,20 @@
       font-size: 24px;
       text-transform: capitalize;
       padding-top: 10px;
+      @include text-shadow;
     }
 
     span.email {
-      color: $free-dark;
+      color: $free-light;
       font-size: 24px;
+      @include text-shadow;
     }
 
     span.phone {
-      color: $free-dark;
+      color: $free-light;
       font-size: 24px;
       margin-top: 10px;
+      @include text-shadow;
     }
   }
 
@@ -131,7 +134,7 @@
       color: $free-light;
 
       h6 {
-        color: $free-light;
+        color: $main-color;
       }
 
       i {
@@ -146,13 +149,18 @@
     background-color: $free-light;
     padding-top: 40px;
     border-bottom: 1px solid $free-dark;
+    text-align: center;
 
     ul {
-        background-color: $free-light;
-        margin-left: 50px;
+      background-color: $free-light;
+      margin-left: 50px;
+      display: flex;
+      justify-content: center;
+
       li {
         padding: 5px;
         transition: all .3s ease-in;
+
         &:hover {
           background-color: $free-dark;
           color: $light-color;
@@ -178,7 +186,8 @@
     .tab-space {
       padding-top: 30px;
 
-      .col-md-6, .col-md-4 {
+      .col-md-6,
+      .col-md-4 {
         padding: 20px;
       }
 
@@ -225,14 +234,15 @@
     background-color: $free-light;
     padding-top: 40px;
     padding-bottom: 40px;
-    border-bottom: 1px solid $free-dark;
+    border-bottom: 1px solid $dark-color;
 
     h4 {
       text-align: center;
-      @include text-shadow;
+      @include main-text-shadow;
+
       a {
         text-decoration: none;
-        color:$dark-color;
+        color: $dark-color;
         cursor: pointer;
       }
     }
