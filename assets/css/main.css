@@ -161,22 +161,54 @@ hr {
         color: #cdd3e2; }
 
 .freelance__page {
-  background-color: #E1E4E9;
-  color: #2E2B59;
+  background-color: #e1e4e9;
+  color: #2e2b59;
   height: 100vh; }
-  .freelance__page .buttons a .freelance {
-    color: #2E2B59;
-    border-left: 0;
-    top: 40px;
-    left: 0; }
-  .freelance__page .buttons a .recruiter {
-    color: #2E2B59;
-    border-right: 0;
-    top: 40px;
-    right: 0; }
+  .freelance__page .buttons {
+    background-color: #cdd3e2;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    z-index: 10; }
+    .freelance__page .buttons .logo {
+      text-transform: uppercase;
+      color: #2e2b59;
+      text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3);
+      position: absolute;
+      left: 15px;
+      line-height: 50px;
+      letter-spacing: 1px;
+      font-size: 20px;
+      font-family: "Crimson Text", serif; }
+    .freelance__page .buttons .links {
+      position: absolute;
+      right: 0; }
+      .freelance__page .buttons .links .freelance {
+        color: #2e2b59;
+        border-left: 0;
+        position: absolute;
+        top: 15px;
+        right: 105px; }
+      .freelance__page .buttons .links .recruiter {
+        color: #2e2b59;
+        border-right: 0;
+        position: absolute;
+        top: 15px;
+        right: 22px; }
   .freelance__page .main-page-info {
-    border-bottom: 1px solid #2E2B59;
-    height: 90%; }
+    background: url("../images/bg.png");
+    background-size: cover;
+    border-bottom: 1px solid #2e2b59;
+    height: 80vh; }
+    .freelance__page .main-page-info .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
     .freelance__page .main-page-info img {
       width: 100px;
       height: 110px;
@@ -185,7 +217,7 @@ hr {
       margin-bottom: 50px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
     .freelance__page .main-page-info h5 {
-      background-color: #2E2B59;
+      background-color: #2e2b59;
       color: #cdd3e2;
       padding: 10px;
       border-top-left-radius: 20px;
@@ -193,94 +225,133 @@ hr {
       border-bottom-right-radius: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
     .freelance__page .main-page-info h2 {
-      color: #2E2B59;
+      color: #2e2b59;
       font-size: 44px; }
     .freelance__page .main-page-info h6 {
-      color: #2E2B59;
+      color: #2e2b59;
       font-size: 24px;
       text-transform: capitalize;
       padding-top: 10px; }
     .freelance__page .main-page-info span.email {
-      color: #2E2B59;
+      color: #2e2b59;
       font-size: 24px; }
     .freelance__page .main-page-info span.phone {
-      color: #2E2B59;
+      color: #2e2b59;
       font-size: 24px;
       margin-top: 10px; }
   .freelance__page .service {
-    background-color: #E1E4E9;
+    background-color: #e1e4e9;
     padding-top: 40px;
-    border-bottom: 1px solid #2E2B59;
+    border-bottom: 1px solid #2e2b59;
     height: 100%;
     height: auto; }
     .freelance__page .service h4 {
-      color: #2E2B59;
+      color: #2e2b59;
       text-align: center;
       padding-bottom: 10px; }
     .freelance__page .service .design {
-      border: 1px solid #2E2B59;
+      border: 1px solid #2e2b59;
       border-radius: 4px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       margin-bottom: 40px;
-      background-color: #2E2B59;
-      color: #E1E4E9; }
+      background-color: #2e2b59;
+      color: #e1e4e9; }
       .freelance__page .service .design h6 {
-        color: #E1E4E9; }
+        color: #e1e4e9; }
       .freelance__page .service .design i {
         padding-top: 30px;
         padding-bottom: 10px; }
   .freelance__page .portfolio {
-    background-color: #E1E4E9;
+    background-color: #e1e4e9;
     padding-top: 40px;
-    border-bottom: 1px solid #2E2B59; }
-  .freelance__page .pricing {
-    background-color: #E1E4E9;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #2E2B59; }
-    .freelance__page .pricing .basic {
-      padding: 30px 15px;
-      background-color: #2E2B59;
-      color: #E1E4E9;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      border-radius: 15px; }
-      .freelance__page .pricing .basic h4 {
-        color: #E1E4E9;
-        padding-bottom: 20px; }
-        .freelance__page .pricing .basic h4::after {
-          content: "";
-          display: block;
-          width: 63px;
-          border: 1px solid #E1E4E9;
-          position: absolute;
-          right: 42%; }
-      .freelance__page .pricing .basic h6 {
-        font-size: 34px;
-        color: #E1E4E9; }
-        .freelance__page .pricing .basic h6 sub {
-          font-size: 11px; }
-      .freelance__page .pricing .basic span.text {
-        font-size: 14px;
-        width: 100%;
-        position: relative; }
-      .freelance__page .pricing .basic ul {
-        padding-top: 50px; }
-      .freelance__page .pricing .basic button {
-        width: 100%;
-        background-color: #E1E4E9;
-        color: #2E2B59;
-        text-transform: uppercase;
-        font-size: 18px; }
+    border-bottom: 1px solid #2e2b59; }
+    .freelance__page .portfolio ul {
+      background-color: #e1e4e9;
+      margin-left: 50px; }
+      .freelance__page .portfolio ul li {
+        padding: 5px;
+        transition: all .3s ease-in; }
+        .freelance__page .portfolio ul li:hover {
+          background-color: #2e2b59;
+          color: #cdd3e2;
+          border-radius: 5px; }
+        .freelance__page .portfolio ul li a {
+          font-size: 16px;
+          font-weight: 600;
+          transition: all .3s ease-in;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #0f1337; }
+          .freelance__page .portfolio ul li a:hover {
+            color: #cdd3e2;
+            border-radius: 5px; }
+    .freelance__page .portfolio .tab-space {
+      padding-top: 30px; }
+      .freelance__page .portfolio .tab-space .col-md-6, .freelance__page .portfolio .tab-space .col-md-4 {
+        padding: 20px; }
+      .freelance__page .portfolio .tab-space .card {
+        background-image: url(../images/restaurant/pulses.png);
+        background-size: cover;
+        background-position: top center; }
+        .freelance__page .portfolio .tab-space .card-content {
+          padding: 10px;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          height: 100%;
+          color: #e1e4e9;
+          transition: all .3s ease-in;
+          opacity: 0; }
+          .freelance__page .portfolio .tab-space .card-content:hover {
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 1; }
+          .freelance__page .portfolio .tab-space .card-content h6 {
+            color: #e1e4e9;
+            font-weight: bold; }
+          .freelance__page .portfolio .tab-space .card-content .card-title {
+            color: #e1e4e9;
+            font-weight: bold;
+            font-size: 22px; }
   .freelance__page .contact {
-    background-color: #E1E4E9;
+    background-color: #e1e4e9;
     padding-top: 40px;
     padding-bottom: 40px;
-    border-bottom: 1px solid #2E2B59; }
+    border-bottom: 1px solid #2e2b59; }
     .freelance__page .contact h4 {
       text-align: center;
-      text-transform: capitalize; }
+      text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3); }
+      .freelance__page .contact h4 a {
+        text-decoration: none;
+        color: #0f1337;
+        cursor: pointer; }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+  color: #e1e4e9;
+  background-color: #0f1337;
+  height: 40px; }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* Style */
+  .main-page {
+    position: relative; }
+    .main-page .buttons .freelance {
+      position: absolute;
+      top: 60%;
+      left: 30%; }
+    .main-page .buttons .recruiter {
+      position: absolute;
+      top: 60%;
+      right: 30%; } }
 *,
 *:before,
 *:after {
@@ -293,52 +364,69 @@ body {
   font-size: 16px;
   background-color: #0f1337; }
 
-.buttons {
-  padding-top: 15px;
-  text-align: center; }
-  .buttons a .freelance {
-    border: 1px solid #5061a0;
-    padding: 15px;
-    color: #cdd3e2;
-    position: absolute;
-    top: 50%;
-    left: 60px; }
-  .buttons a .recruiter {
-    border: 1px solid #5061a0;
-    padding: 15px;
-    color: #cdd3e2;
-    position: absolute;
-    top: 50%;
-    right: 60px; }
-  .buttons .recruiter {
-    color: #cdd3e2;
-    text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3);
-    text-align: center; }
-  .buttons .feelance {
+.main-page {
+  background: url("../images/bg.jpg") no-repeat center center/cover;
+  height: 100vh; }
+  .main-page--over {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%; }
+  .main-page .buttons {
+    padding-bottom: 100px; }
+    .main-page .buttons a .freelance {
+      background-color: #2e2b59;
+      border-top-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      text-transform: uppercase;
+      padding: 15px;
+      color: #cdd3e2;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    .main-page .buttons a .recruiter {
+      background-color: #2e2b59;
+      border-top-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      text-transform: uppercase;
+      padding: 15px;
+      color: #cdd3e2;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    .main-page .buttons .recruiter {
+      color: #cdd3e2;
+      text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3);
+      text-align: center; }
+    .main-page .buttons .feelance {
+      color: #cdd3e2;
+      text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3); }
+  .main-page .main-page-info {
+    padding-bottom: 100px;
     color: #cdd3e2;
     text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3); }
-
-.main-page-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 40vh;
-  color: #cdd3e2; }
-  .main-page-info h2 {
-    color: #cdd3e2;
-    font-family: "Crimson Text", serif; }
-  .main-page-info h5 {
-    color: #cdd3e2; }
-  .main-page-info span {
-    font-size: 18px; }
-
-.social {
-  text-align: center;
-  padding-top: 230px; }
-  .social a {
-    border: 1px solid #5061a0;
-    padding: 5px 5px;
-    margin: 0 3px;
-    color: #cdd3e2; }
+    .main-page .main-page-info h2 {
+      color: #cdd3e2;
+      font-family: "Crimson Text", serif;
+      text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3);
+      font-size: 54px; }
+      .main-page .main-page-info h2 span.dot {
+        color: #5061a0;
+        font-size: 10px; }
+    .main-page .main-page-info h5 {
+      color: #cdd3e2;
+      font-size: 34px;
+      text-transform: capitalize; }
+    .main-page .main-page-info span {
+      font-size: 24px;
+      text-transform: capitalize; }
+  .main-page .social {
+    width: 100%;
+    @inculde freelance-shadow; }
+    .main-page .social a {
+      background-color: #2e2b59;
+      border-radius: 15px;
+      padding: 5px 15px;
+      margin: 0 13px;
+      color: #cdd3e2; }

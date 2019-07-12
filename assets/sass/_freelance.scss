@@ -4,28 +4,64 @@
   height: 100vh;
 
   .buttons {
-    a {
+    background-color: $light-color;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    @include box-shadow;
+    z-index: 10;
+
+    .logo {
+      text-transform: uppercase;
+      color: $free-dark;
+      @include text-shadow;
+      position: absolute;
+      left: 15px;
+      line-height: 50px;
+      letter-spacing: 1px;
+      font-size: 20px;
+      font-family: $crimson-font;
+    }
+
+    .links {
+      position: absolute;
+      right: 0;
+
       .freelance {
         color: $free-dark;
         border-left: 0;
-        top: 40px;
-        left: 0;
+        position: absolute;
+        top: 15px;
+        right: 105px;
       }
 
       .recruiter {
         color: $free-dark;
         border-right: 0;
-        top: 40px;
-        right: 0;
+        position: absolute;
+        top: 15px;
+        right: 22px;
       }
     }
   }
 
   // Main Page Info
   .main-page-info {
+    background: url('../images/bg.png');
+    background-size: cover;
     // padding-top: 120px;
     border-bottom: 1px solid $free-dark;
-    height: 90%;
+    height: 80vh;
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
     img {
       width: 100px;
@@ -110,62 +146,76 @@
     background-color: $free-light;
     padding-top: 40px;
     border-bottom: 1px solid $free-dark;
-  }
 
-  // PRICING
-  .pricing {
-    background-color: $free-light;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid $free-dark;
-
-    .basic {
-      padding: 30px 15px;
-      background-color: $free-dark;
-      color: $free-light;
-      text-align: center;
-      @include freelance-shadow;
-      border-radius: 15px;
-
-      h4 {
-        color: $free-light;
-        padding-bottom: 20px;
-
-        &::after {
-          content: "";
-          display: block;
-          width: 63px;
-          border: 1px solid $free-light;
-          position: absolute;
-          right: 42%;
-        }
-      }
-
-      h6 {
-        font-size: 34px;
-        color: $free-light;
-
-        sub {
-          font-size: 11px;
-        }
-      }
-
-      span.text {
-        font-size: 14px;
-        width: 100%;
-        position: relative;
-      }
-
-      ul {
-        padding-top: 50px;
-      }
-
-      button {
-        width: 100%;
+    ul {
         background-color: $free-light;
-        color: $free-dark;
-        text-transform: uppercase;
-        font-size: 18px;
+        margin-left: 50px;
+      li {
+        padding: 5px;
+        transition: all .3s ease-in;
+        &:hover {
+          background-color: $free-dark;
+          color: $light-color;
+          border-radius: 5px;
+        }
+
+        a {
+          font-size: 16px;
+          font-weight: 600;
+          transition: all .3s ease-in;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $dark-color;
+
+          &:hover {
+            color: $light-color;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    .tab-space {
+      padding-top: 30px;
+
+      .col-md-6, .col-md-4 {
+        padding: 20px;
+      }
+
+      .card {
+        background-image: url(../images/restaurant/pulses.png);
+        background-size: cover;
+        background-position: top center;
+
+        &-content {
+          padding: 10px;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          height: 100%;
+          color: $free-light;
+          transition: all .3s ease-in;
+          opacity: 0;
+
+          &:hover {
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 1;
+          }
+
+          h6 {
+            color: $free-light;
+            font-weight: bold;
+          }
+
+          .card-title {
+            color: $free-light;
+            font-weight: bold;
+            font-size: 22px;
+          }
+        }
       }
     }
   }
@@ -179,7 +229,24 @@
 
     h4 {
       text-align: center;
-      text-transform: capitalize;
+      @include text-shadow;
+      a {
+        text-decoration: none;
+        color:$dark-color;
+        cursor: pointer;
+      }
     }
   }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+  color: $free-light;
+  background-color: $dark-color;
+  height: 40px;
 }

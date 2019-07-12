@@ -1,0 +1,21 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* Style */
+  // Main Page
+  .main-page {
+    position: relative;
+    .buttons {
+      .freelance {
+        position: absolute;
+        top: 60%;
+        left: 30%;
+      }
+
+      .recruiter {
+        position: absolute;
+        top: 60%;
+        right: 30%;
+      }
+    }
+  }
+}

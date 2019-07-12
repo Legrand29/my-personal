@@ -1,8 +1,6 @@
 // Google Fonts
-$crimson-font: "Crimson Text",
-serif;
-$josephin-font: "Josefin Sans",
-sans-serif;
+$crimson-font: "Crimson Text", serif;
+$josephin-font: "Josefin Sans", sans-serif;
 
 // Colors
 $dark-color: #0f1337;
@@ -15,20 +13,23 @@ $accent-color: #7a8bb6;
 
 $main-color: #5061a0;
 
+$free-light: #e1e4e9;
 
-$free-light: #E1E4E9;
-
-$free-dark:#2E2B59;
+$free-dark: #2e2b59;
 
 @mixin text-shadow {
-    text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3);
+  text-shadow: 2px 1px 4px rgba(255, 255, 255, 0.3);
 }
 
 @mixin box-shadow {
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
-        0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
 @mixin freelance-shadow {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@mixin main-text-shadow {
+  text-shadow: 0px 2px 2px #e1e4e9;
 }
