@@ -15,12 +15,23 @@ a {
   background: url("../images/corporate-vector-blue-business-background/bg.jpg") no-repeat center center/cover;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center; }
   .recruite__page h1 {
     color: cornflowerblue;
     font-family: "Crimson Text", serif; }
+  .recruite__page a {
+    background-color: cornflowerblue;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-transform: uppercase;
+    padding: 20px 30px 10px; }
+    .recruite__page a h6 {
+      font-size: 76px;
+      font-family: "Crimson Text", serif;
+      color: #cdd3e2; }
 
 .freelance__page {
   background-color: #e1e4e9;

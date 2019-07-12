@@ -2,242 +2,257 @@
   background: url('../images/corporate-vector-blue-business-background/bg.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+
   h1 {
-  color: cornflowerblue;
-  font-family: $crimson-font;    
+    color: cornflowerblue;
+    font-family: $crimson-font;
   }
 
-//  .buttons {
-//    a {
-//      .freelance {
-//        border: 1px solid $main-color;
-//        padding: 15px;
-//        color: $light-color;
-//        position: absolute;
-//        top: 20px;
-//        left: 0;
-//      }
-//
-//      .recruiter {
-//        border: 1px solid $main-color;
-//        padding: 15px;
-//        color: $light-color;
-//        position: absolute;
-//        top: 20px;
-//        right: 0;
-//      }
-//    }
-//  }
-//
-//  .about {
-//    border-bottom: 1px solid $main-color;
-//    padding-top: 35px;
-//    padding-bottom: 35px;
-//
-//    .card--body {
-//      span.about-me {
-//        font-size: 26px;
-//        text-transform: uppercase;
-//        color: $main-color;
-//
-//        &::after {
-//          content: "";
-//          border: 1px solid $light-color;
-//          width: 85px;
-//          display: flex;
-//          opacity: 1;
-//          position: relative;
-//          top: 0%;
-//        }
-//      }
-//
-//      .lead {
-//        background-color: $dark-color;
-//        margin-top: 30px;
-//        color: $accent-color;
-//        @include box-shadow;
-//        border-radius: 5px;
-//
-//        strong {
-//          color: $light-color;
-//        }
-//      }
-//    }
-//  }
-//
-//  // MY SKILLS AREA
-//  .skills {
-//    border-bottom: 1px solid $main-color;
-//    margin-top: 35px;
-//    padding-bottom: 75px;
-//
-//    .card-body {
-//      span.my-skills {
-//        font-size: 26px;
-//        text-transform: uppercase;
-//        color: $main-color;
-//
-//        &::after {
-//          content: "";
-//          border: 1px solid $light-color;
-//          width: 35px;
-//          display: flex;
-//          opacity: 1;
-//          position: relative;
-//          top: 0%;
-//        }
-//      }
-//
-//      .progess-group {
-//        border-radius: 4px;
-//        margin-top: 50px;
-//        padding-top: 15px;
-//        padding-bottom: 30px;
-//        @include box-shadow;
-//
-//        h3 {
-//          color: $main-color;
-//          opacity: 0.5;
-//          letter-spacing: 1.5px;
-//          font-family: $josephin-font;
-//        }
-//
-//        h6 {
-//          color: $light-color;
-//          padding-top: 25px;
-//        }
-//      }
-//    }
-//  }
-//
-//  // WORK EXPERIENCE AREA
-//  .work-experience {
-//    margin-top: 35px;
-//    padding-bottom: 35px;
-//
-//    .card-body {
-//      span.work-experience {
-//        font-size: 26px;
-//        text-transform: uppercase;
-//        color: $main-color;
-//
-//        &::after {
-//          content: "";
-//          border: 1px solid $light-color;
-//          width: 78px;
-//          display: flex;
-//          opacity: 1;
-//          position: relative;
-//          top: 0%;
-//        }
-//      }
-//
-//      .my__experience {
-//        margin-top: 80px;
-//        padding-bottom: 20px;
-//        border-radius: 5px;
-//        background-color: $dark-color;
-//        color: $accent-color;
-//        @include box-shadow;
-//        width: 100%;
-//
-//        &--pic {
-//          h3 {
-//            color: $main-color;
-//            padding: 15px 10px 0px 10px;
-//          }
-//
-//          h6 {
-//            padding-left: 10px;
-//            margin-top: -10px;
-//            color: red;
-//          }
-//        }
-//
-//        &--info {
-//          h4 {
-//            color: $main-color;
-//            text-transform: capitalize;
-//            padding-top: 20px;
-//          }
-//
-//          a {
-//            text-decoration: none;
-//            text-transform: uppercase;
-//            color: $light-color;
-//            border: 1px solid $accent-color;
-//            padding: 5px;
-//            border-radius: 5px;
-//            cursor: pointer;
-//
-//            i {
-//              padding-left: 5px;
-//            }
-//          }
-//        }
-//      }
-//    }
-//  }
-//
-//  // CONTACT AREA
-//  .contact-page {
-//    margin-top: 35px;
-//    padding-bottom: 35px;
-//
-//    .card-body {
-//      span.contact {
-//        font-size: 26px;
-//        text-transform: uppercase;
-//        color: $main-color;
-//
-//        &::after {
-//          content: "";
-//          border: 1px solid $light-color;
-//          width: 115px;
-//          display: flex;
-//          opacity: 1;
-//          position: relative;
-//          top: 0%;
-//        }
-//      }
-//
-//      .contact__info {
-//        margin-top: 80px;
-//        padding: 20px 0 40px 0;
-//        border-radius: 5px;
-//        background-color: $dark-color;
-//        color: $accent-color;
-//        @include box-shadow;
-//        width: 100%;
-//
-//        display: flex;
-//        flex-direction: column;
-//        justify-content: center;
-//        align-items: center;
-//        text-align: center;
-//
-//        i {
-//          color: $light-color;
-//          border-radius: 50%;
-//          border: 1px solid $light-color;
-//          padding: 15px;
-//          margin-bottom: 20px;
-//        }
-//
-//        span {
-//          font-size: 24px;
-//          text-transform: capitalize;
-//        }
-//
-//        a {
-//          text-decoration: none;
-//          color: $light-color;
-//        }
-//      }
-//    }
-//  }
+  a {
+    background-color: cornflowerblue;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-transform: uppercase;
+    padding: 20px 30px 10px;
+    h6 {
+    font-size: 76px;
+    font-family: $crimson-font;
+      color: $light-color;
+    }
+    
+  }
+
+  //  .buttons {
+  //    a {
+  //      .freelance {
+  //        border: 1px solid $main-color;
+  //        padding: 15px;
+  //        color: $light-color;
+  //        position: absolute;
+  //        top: 20px;
+  //        left: 0;
+  //      }
+  //
+  //      .recruiter {
+  //        border: 1px solid $main-color;
+  //        padding: 15px;
+  //        color: $light-color;
+  //        position: absolute;
+  //        top: 20px;
+  //        right: 0;
+  //      }
+  //    }
+  //  }
+  //
+  //  .about {
+  //    border-bottom: 1px solid $main-color;
+  //    padding-top: 35px;
+  //    padding-bottom: 35px;
+  //
+  //    .card--body {
+  //      span.about-me {
+  //        font-size: 26px;
+  //        text-transform: uppercase;
+  //        color: $main-color;
+  //
+  //        &::after {
+  //          content: "";
+  //          border: 1px solid $light-color;
+  //          width: 85px;
+  //          display: flex;
+  //          opacity: 1;
+  //          position: relative;
+  //          top: 0%;
+  //        }
+  //      }
+  //
+  //      .lead {
+  //        background-color: $dark-color;
+  //        margin-top: 30px;
+  //        color: $accent-color;
+  //        @include box-shadow;
+  //        border-radius: 5px;
+  //
+  //        strong {
+  //          color: $light-color;
+  //        }
+  //      }
+  //    }
+  //  }
+  //
+  //  // MY SKILLS AREA
+  //  .skills {
+  //    border-bottom: 1px solid $main-color;
+  //    margin-top: 35px;
+  //    padding-bottom: 75px;
+  //
+  //    .card-body {
+  //      span.my-skills {
+  //        font-size: 26px;
+  //        text-transform: uppercase;
+  //        color: $main-color;
+  //
+  //        &::after {
+  //          content: "";
+  //          border: 1px solid $light-color;
+  //          width: 35px;
+  //          display: flex;
+  //          opacity: 1;
+  //          position: relative;
+  //          top: 0%;
+  //        }
+  //      }
+  //
+  //      .progess-group {
+  //        border-radius: 4px;
+  //        margin-top: 50px;
+  //        padding-top: 15px;
+  //        padding-bottom: 30px;
+  //        @include box-shadow;
+  //
+  //        h3 {
+  //          color: $main-color;
+  //          opacity: 0.5;
+  //          letter-spacing: 1.5px;
+  //          font-family: $josephin-font;
+  //        }
+  //
+  //        h6 {
+  //          color: $light-color;
+  //          padding-top: 25px;
+  //        }
+  //      }
+  //    }
+  //  }
+  //
+  //  // WORK EXPERIENCE AREA
+  //  .work-experience {
+  //    margin-top: 35px;
+  //    padding-bottom: 35px;
+  //
+  //    .card-body {
+  //      span.work-experience {
+  //        font-size: 26px;
+  //        text-transform: uppercase;
+  //        color: $main-color;
+  //
+  //        &::after {
+  //          content: "";
+  //          border: 1px solid $light-color;
+  //          width: 78px;
+  //          display: flex;
+  //          opacity: 1;
+  //          position: relative;
+  //          top: 0%;
+  //        }
+  //      }
+  //
+  //      .my__experience {
+  //        margin-top: 80px;
+  //        padding-bottom: 20px;
+  //        border-radius: 5px;
+  //        background-color: $dark-color;
+  //        color: $accent-color;
+  //        @include box-shadow;
+  //        width: 100%;
+  //
+  //        &--pic {
+  //          h3 {
+  //            color: $main-color;
+  //            padding: 15px 10px 0px 10px;
+  //          }
+  //
+  //          h6 {
+  //            padding-left: 10px;
+  //            margin-top: -10px;
+  //            color: red;
+  //          }
+  //        }
+  //
+  //        &--info {
+  //          h4 {
+  //            color: $main-color;
+  //            text-transform: capitalize;
+  //            padding-top: 20px;
+  //          }
+  //
+  //          a {
+  //            text-decoration: none;
+  //            text-transform: uppercase;
+  //            color: $light-color;
+  //            border: 1px solid $accent-color;
+  //            padding: 5px;
+  //            border-radius: 5px;
+  //            cursor: pointer;
+  //
+  //            i {
+  //              padding-left: 5px;
+  //            }
+  //          }
+  //        }
+  //      }
+  //    }
+  //  }
+  //
+  //  // CONTACT AREA
+  //  .contact-page {
+  //    margin-top: 35px;
+  //    padding-bottom: 35px;
+  //
+  //    .card-body {
+  //      span.contact {
+  //        font-size: 26px;
+  //        text-transform: uppercase;
+  //        color: $main-color;
+  //
+  //        &::after {
+  //          content: "";
+  //          border: 1px solid $light-color;
+  //          width: 115px;
+  //          display: flex;
+  //          opacity: 1;
+  //          position: relative;
+  //          top: 0%;
+  //        }
+  //      }
+  //
+  //      .contact__info {
+  //        margin-top: 80px;
+  //        padding: 20px 0 40px 0;
+  //        border-radius: 5px;
+  //        background-color: $dark-color;
+  //        color: $accent-color;
+  //        @include box-shadow;
+  //        width: 100%;
+  //
+  //        display: flex;
+  //        flex-direction: column;
+  //        justify-content: center;
+  //        align-items: center;
+  //        text-align: center;
+  //
+  //        i {
+  //          color: $light-color;
+  //          border-radius: 50%;
+  //          border: 1px solid $light-color;
+  //          padding: 15px;
+  //          margin-bottom: 20px;
+  //        }
+  //
+  //        span {
+  //          font-size: 24px;
+  //          text-transform: capitalize;
+  //        }
+  //
+  //        a {
+  //          text-decoration: none;
+  //          color: $light-color;
+  //        }
+  //      }
+  //    }
+  //  }
 }
